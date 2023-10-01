@@ -1,8 +1,2 @@
-"""Hi"""
-
-def main():
-    """Hello World"""
-    print("Hello World")
-main()
-
-
+list1 = [[1, 2],[3, [4, 5], 6]]
+print(list1[[2]])
