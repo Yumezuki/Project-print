@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Itim&display=swap'>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<script>
+  function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+<body>
+  <div>
+    <img src="static/image_bg.png" class="bag">
+  </div>
+    <div class="screen-1">
+    <div>
+        <img src="static/IMG_0568.png" class="center">
+    </div>
+    <p class="line"></p>
+    <div>
+        <img src="static/image_dog.png" class="dog">
+        <font class="login-txt">Login</font>
+    </div>
+    <div>
+      <form>
+        <div class="email">
+          <div class="sec-2">
+            <ion-icon name="mail" role="img" class="md hydrated" aria-label="mail outline"></ion-icon>
+            <input type="email" name="email" placeholder="User" id="usename" style="font-family: 'Itim'; font-size: 125%; color: #7F5A3F;">
+          </div>
+        </div>
+        <div class="password">
+          <div class="sec-2">
+            <ion-icon name="lock-closed" role="img" class="md hydrated" aria-label="lock closed outline"></ion-icon>
+            <input class="pas" type="password" name="password" placeholder="Password" id="password" style="font-family: 'Itim'; font-size: 125%; color: #7F5A3F;">
+            <ion-icon class="show-hide" name="eye" onclick="myFunction()"></ion-icon>
+        </div>
+        <div >
+          <a href="https://www.it.kmitl.ac.th/wp-content/uploads/2017/12/Chotipat-300x300.jpg" style="text-decoration:none" <font class="forget-txt">Forget Password ?</font></a>
+          <button class="login" style="font-family: 'Itim';">Login </button>
+        </div>
+      </form>
+    </div>
+    <div> 
+      <p class="line-2"></p>
+      <font class="or-txt">or</font>
+      <p class="line-3"></p>
+    </div>
+    <div>
+      <font class="SML-txt">Social Media Login</font>
+    </div>
+    <div>
+      <font class="Dh-txt">Don't have an account?</font>
+      <a href="http://127.0.0.1:5000/sign_up" style="text-decoration:none" <font class="si-txt">Sign up</font> </a>
+    </div>
+    <div>
+      <img class="goo" src="static/gogo.png">
+      <img class="fac" src="static/face.png">
+      <img class="gi" src="static/ig.png">
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body {
+    background-color: #F6DB78;
+  }
+
+*{
+    font-family: 'Itim';
+}
+
+.photo {
+    width: 20%;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+}

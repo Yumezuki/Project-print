@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Itim&display=swap'>
+    <link rel="stylesheet" href="static/styleup.css">
+</head>
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+  function myFunction2() {
+    var x = document.getElementById("myInput2");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+</script>
+
+<body>
+    <div>
+        <img src="static/image_bg.png" class="bago">
+    </div>
+    <div>
+        <img src="static/IMG_0568.png" class="center">
+    </div>
+    <div>
+        <p class="line"></p>
+    </div>
+    <div>
+        <font class="CNA-txt">Create New Account</font>
+    </div>
+    <div>
+        <div>
+            <input type="text" class="name" name=Name placeholder="Name" >
+            <input type="text" class="surname" name=Surame placeholder="Surname" >
+        </div>
+        <div class="email">
+            <div class="sec-2">
+                <ion-icon name="mail" role="img" class="md hydrated"></ion-icon>
+                <input type="email" name="email" placeholder="Email" class="fin">
+            </div>
+        </div>
+        <div class="user">
+            <div class="sec-2">
+                <ion-icon name="person" role="img" class="md hydrated"></ion-icon>
+                <input type="text" name="Username" placeholder="Username" class="fin">
+            </div>
+        </div>
+        <div class="password">
+            <div class="sec-2">
+                <ion-icon name="lock-closed" role="img" class="md hydrated"></ion-icon>
+                <input class="fin" type="password" name="password" placeholder="Password" id="myInput">
+                <ion-icon class="show-hide" name="eye" onclick="myFunction()"></ion-icon>
+            </div>
+        </div>
+        <div class="passwordcheck">
+            <div class="sec-2">
+                <ion-icon name="lock-closed" role="img" class="md hydrated"></ion-icon>
+                <input class="fin" type="password" name="password" placeholder="Password Again" id="myInput2">
+                <ion-icon class="show-hide" name="eye" onclick="myFunction2()"></ion-icon>
+            </div>
+        </div>
+        <div>
+            <button class="signup" style="font-family: 'Itim';">Sign Up</button>
+        </div>
+        <div>
+            <font class="al-txt">Already have an account?</font>
+            <a href="http://127.0.0.1:5000/login" style="text-decoration:none" <font class="lo-txt">Login</font> </a>
+          </div>
+    </div>
+</body>
+</html>
