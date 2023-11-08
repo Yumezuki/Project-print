@@ -2,28 +2,24 @@
   font-family: 'Itim';
 }
 
-.background{
-  position: absolute;
-  left: 27%;
-  top: 42%;
-  width: 50%;
+.body {
+  text-align: center;
 }
 
-.background_block{
-  width:100vw;
-  height:100vh;
-
+.background {
+  margin: 14em 0 0 7.5em;
 }
 
-.logo{
+.logo_button {
+  top: 1em;
+  left: 1em;
   position: absolute;
-  width:20%;
-  height:10%;
-
 }
 
-.logo_button{
-  position: absolute;
-  width:100vw;
-  height:100vh;
+.logo {
+  height: 1.8em;
+}
+
+.text {
+  height: 1.8em;
 }

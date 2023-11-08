@@ -12,7 +12,7 @@ body {
 .loading img {
     display: inline-block;
     vertical-align: middle;
-    height: 3em;
+    height: 5em;
     margin: 15px;
 }
 
@@ -58,6 +58,6 @@ body {
 
 @media screen and (max-width: 1000px){
     .loading {
-        margin-top: 50%;
+        margin-top: 52%;
     }
 }
