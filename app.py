@@ -14,5 +14,9 @@ def sign_up():
 def index():
     return render_template("index.html")
 
+@app.route('/search')
+def search():
+    return render_template("search_page.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
