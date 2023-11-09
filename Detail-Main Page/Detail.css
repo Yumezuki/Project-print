@@ -88,15 +88,6 @@ h2 {
     color: white;
 }
 
-.fa-heart {
-    position: absolute;
-    z-index: 1;
-    font-size: 25px;
-    color: rgb(245, 170, 182);
-    margin-left: 85%;
-    top: 18%;
-}
-
 .fa-facebook {
     margin-top: 10%;
     font-size: 35px;
