@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim', cursive;
+}
+
+body {
+    background-image: linear-gradient(#FBDA66, white);
+    background-repeat: no-repeat;
+    background-size: 100% 900px;
+}
+
+.top-bar {
+    position: absolute;
+    width: 80%;
+    margin: 1em;
+    z-index: 1;
+}
+
+.back {
+    height: 2.9em;
+    width: 2.9em;
+    background-color: #7F5A3F;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 4px 10px 0;
+}
+
+.fa-arrow-left{
+    margin: 30%;
+    font-size: 20px;
+    color: white;
+} 
+
+.burger {
+    height: 2.6em;
+    width: 2.6em;
+    margin-left: 85%;
+    background-color: #F6DB78;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 4px 10px 0;
+    border-style: solid;
+    border-color: #7F5A3F;
+    position: absolute;
+}
+
+.fa-bars {
+    margin: 30%;
+    font-size: 18px;
+    color: #7F5A3F;
+}
+
+.img-main {
+    height: 15em;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.678)), url(https://images.wagwalkingweb.com/media/daily_wag/blog_articles/hero/1678934108.5188236/everything-you-need-to-know-about-siamese-cats.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: inline-block;
+    position: relative;
+}
+
+.box {
+    height: auto;
+    width: 20em;
+    top: 20%;
+    margin: 5%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 0 4px 10px 0 gray;
+    text-align: left;
+    padding: 1em;
+    color: #7F5A3F;
+}
+
+h2 {
+    position: absolute;
+    z-index: 1;
+    margin-left: 10%;
+    top: 18%;
+    color: white;
+}
+
+.fa-heart {
+    position: absolute;
+    z-index: 1;
+    font-size: 25px;
+    color: rgb(245, 170, 182);
+    margin-left: 85%;
+    top: 18%;
+}
+
+.fa-facebook {
+    margin-top: 10%;
+    font-size: 35px;
+}
+
+.fa-tiktok {
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.button {
+    margin-top: 8.5%;
+    margin-left: 9%;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #F6DB78;
+    color: #7F5A3F;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 10px 0 gray;
+    cursor: pointer;
+    position: absolute;
+}
+
+h1 {
+    text-align: center;
+    color: #7f5a3fc5;
+    margin-top: 40%;
+    position: relative;
+}
+

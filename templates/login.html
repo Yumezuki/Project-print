@@ -34,13 +34,12 @@
         <img src="static/image_dog.png" class="dog">
         <font class="login-txt">Login</font>
     </div>
-    <form id="frm-login">
     <div>
+      <form>
         <div class="email">
           <div class="sec-2">
             <ion-icon name="mail" role="img" class="md hydrated" aria-label="mail outline"></ion-icon>
-            <form id="frm-login">
-            <input type="text" name="email" placeholder="User" id="username" style="font-family: 'Itim'; font-size: 125%; color: #7F5A3F;">
+            <input type="email" name="email" placeholder="User" id="usename" style="font-family: 'Itim'; font-size: 125%; color: #7F5A3F;">
           </div>
         </div>
         <div class="password">
@@ -50,7 +49,7 @@
             <ion-icon class="show-hide" name="eye" onclick="myFunction()"></ion-icon>
         </div>
         <div >
-          <a href="https://ejudge.it.kmitl.ac.th/" style="text-decoration:none" <font class="forget-txt">Forget Password ?</font></a>
+          <a href="https://www.it.kmitl.ac.th/wp-content/uploads/2017/12/Chotipat-300x300.jpg" style="text-decoration:none" <font class="forget-txt">Forget Password ?</font></a>
           <button class="login" style="font-family: 'Itim';">Login </button>
         </div>
       </form>
@@ -75,19 +74,3 @@
     </div>
 </body>
 </html>
-
-<script>
-  var username = "gypprt"
-  var password = "3548"
-  document.getElementById("frm-login").onsubmit = function(e){
-    e.preventDefault()
-    var user = document.getElementById("username").value
-    var pass = document.getElementById("password").value
-    if(user === username && pass === password){
-      localStorage.setItem("username",user)
-      window.location = "index"
-    }else{
-      alert("Invalid username or password")
-    }
-  }
-</script>

@@ -112,14 +112,14 @@ body {
 }
 .screen-1 .password {
   background: white;
-  box-shadow: 0 0 2em #7f5a3f6e;
+  box-shadow: 0 0 2em #7f5a3f54;
   border-style: solid;
   border-color: #7F5A3F;
   padding: 0.5em;
   display: flex;
   flex-direction: column;
+  gap: 0.5em;
   border-radius: 30px;
-  color: #7F5A3F;
   position: absolute;
   top: 50%;
   left: 10%;
