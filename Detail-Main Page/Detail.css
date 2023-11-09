@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Pixelify+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(#FBDA66, white);
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+}
+
+.top-bar {
+    position: fixed;
+    width: 80%;
+    margin: 1em;
+}
+
+.back {
+    height: 2.9em;
+    width: 2.9em;
+    background-color: #7F5A3F;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 4px 10px 0;
+}
+
+.fa-arrow-left{
+    margin: 30%;
+    font-size: 20px;
+    color: white;
+} 
+
+.burger {
+    height: 2.6em;
+    width: 2.6em;
+    margin-left: 85%;
+    background-color: #F6DB78;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 4px 10px 0;
+    border-style: solid;
+    border-color: #7F5A3F;
+    position: absolute;
+}
+
+.fa-bars {
+    margin: 30%;
+    font-size: 18px;
+    color: #7F5A3F;
+}
+
+.img-main {
+    height: 15em;
+    width: 100%;
+    background-image: url(https://images.wagwalkingweb.com/media/daily_wag/blog_articles/hero/1678934108.5188236/everything-you-need-to-know-about-siamese-cats.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: inline-block;
+}
