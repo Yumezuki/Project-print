@@ -10,6 +10,7 @@ body {
     background-image: linear-gradient(#FBDA66, white);
     background-repeat: no-repeat;
     background-size: 100% 900px;
+    height: 940px;
 }
 
 .top-bar {
@@ -60,6 +61,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
+    background-position-y: center;
     display: inline-block;
     position: relative;
 }
@@ -80,7 +82,7 @@ body {
     color: #7F5A3F;
 }
 
-h2 {
+.name-res {
     position: absolute;
     z-index: 1;
     margin-left: 10%;
@@ -122,3 +124,83 @@ h1 {
     position: relative;
 }
 
+.box-activities {
+    height: auto;
+    width: 20em;
+    margin: 3%;
+    background-color: #FFF7DC;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 0 gray;
+    text-align: center;
+    padding: 1em;
+    color: #7F5A3F;
+}
+
+.img-act {
+    height: 12em;
+    width: 20em;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 gray;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/RedCat_8727.jpg/1200px-RedCat_8727.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: relative;
+}
+
+.name-act {
+    margin: 3%;
+}
+
+@media screen and (min-width: 1000px){
+    body {
+        height: 900px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 6%;
+    }
+
+    .box-activities {
+        margin: 1.5% 5%;
+    }
+
+    .name-res {
+        margin-left: 7%;
+        top: 32%;
+        font-size: 2.5em;
+    }
+    
+    .img-main {
+        height: 25em;
+    }
+
+    .box {
+        width: auto;
+        top: 30%;
+    }
+
+    .fa-facebook {
+        margin-top: 5%;
+        font-size: 35px;
+        margin-left: 73%;
+    }
+    
+    .fa-tiktok {
+        font-size: 30px;
+        margin-left: 2%;
+    }
+
+    .button {
+        margin-top: 5%;
+        width: 15em;
+        margin-left: 2%;
+    }
+
+    .burger {
+        margin-left: 87em;
+    }
+}
