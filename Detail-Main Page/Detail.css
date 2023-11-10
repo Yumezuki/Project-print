@@ -10,7 +10,7 @@ body {
     background-image: linear-gradient(#FBDA66, white);
     background-repeat: no-repeat;
     background-size: 100% 900px;
-    height: 940px;
+    height: 1600px;
 }
 
 .top-bar {
@@ -18,6 +18,7 @@ body {
     width: 80%;
     margin: 1em;
     z-index: 1;
+    justify-content: space-between;
 }
 
 .back {
@@ -26,7 +27,7 @@ body {
     background-color: #7F5A3F;
     border-radius: 50%;
     display: inline-block;
-    box-shadow: 0 4px 10px 0;
+    box-shadow: 0 4px 10px 0 rgb(56, 56, 56);
 }
 
 .fa-arrow-left{
@@ -42,7 +43,7 @@ body {
     background-color: #F6DB78;
     border-radius: 50%;
     display: inline-block;
-    box-shadow: 0 4px 10px 0;
+    box-shadow: 0 4px 10px 0 rgb(56, 56, 56);
     border-style: solid;
     border-color: #7F5A3F;
     position: absolute;
@@ -68,7 +69,7 @@ body {
 
 .box {
     height: auto;
-    width: 20em;
+    width: auto;
     top: 20%;
     margin: 5%;
     background-color: white;
@@ -86,7 +87,8 @@ body {
     position: absolute;
     z-index: 1;
     margin-left: 10%;
-    top: 18%;
+    margin-top: 4em;
+    font-size: 2em;
     color: white;
 }
 
@@ -101,9 +103,8 @@ body {
 }
 
 .button {
-    margin-top: 8.5%;
-    margin-left: 9%;
-    width: 50%;
+    margin-top: 5%;
+    width: 10em;
     border-radius: 20px;
     padding: 10px;
     background-color: #F6DB78;
@@ -114,20 +115,20 @@ body {
     display: inline-block;
     box-shadow: 0 4px 10px 0 gray;
     cursor: pointer;
-    position: absolute;
+    float: right;
 }
 
 h1 {
     text-align: center;
     color: #7f5a3fc5;
-    margin-top: 40%;
+    margin-top: 37%;
     position: relative;
 }
 
 .box-activities {
     height: auto;
-    width: 20em;
-    margin: 3%;
+    width: auto;
+    margin: 5%;
     background-color: #FFF7DC;
     display: inline-block;
     border-radius: 20px;
@@ -135,6 +136,7 @@ h1 {
     text-align: center;
     padding: 1em;
     color: #7F5A3F;
+    align-items: center;
 }
 
 .img-act {
@@ -159,18 +161,13 @@ h1 {
         height: 900px;
     }
 
-    h1 {
-        text-align: center;
-        margin-top: 6%;
-    }
-
     .box-activities {
-        margin: 1.5% 5%;
+        margin: 1% 5%;
     }
 
     .name-res {
         margin-left: 7%;
-        top: 32%;
+        margin-top: 5.7em;
         font-size: 2.5em;
     }
     
@@ -179,28 +176,14 @@ h1 {
     }
 
     .box {
-        width: auto;
         top: 30%;
-    }
-
-    .fa-facebook {
-        margin-top: 5%;
-        font-size: 35px;
-        margin-left: 73%;
-    }
-    
-    .fa-tiktok {
-        font-size: 30px;
-        margin-left: 2%;
-    }
-
-    .button {
-        margin-top: 4.8%;
-        width: 15em;
-        margin-left: 2%;
     }
 
     .burger {
         margin-left: 87em;
+    }
+
+    h1 {
+        margin-top: 6%;
     }
 }
