@@ -216,19 +216,7 @@ button {
   cursor: pointer;
 }
 
-.bag {
-  position: absolute;
-  top: 5%;
-  width: 100%;
-  }
-
   @media screen and (min-width: 1000px) {
-    .bag {
-      top: 0%;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
     .line{
       border-radius: 15px;
       padding: 0.5%; 
