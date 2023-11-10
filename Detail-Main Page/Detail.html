@@ -7,16 +7,53 @@
     <link rel="icon" href="/Image/Logo_WHEREVER(Color).png">
     <link rel="stylesheet" href="/Detail-Main Page/Detail.css">
     <script src="https://kit.fontawesome.com/8fdb36e626.js" crossorigin="anonymous"></script>
+    <script src="/Detail-Main Page/Detail.js"></script>
 </head>
 <body>
-    <nav class="top-bar">
+    <header class="primary-header flex">
         <a href="#" class="back">
             <i class="fa-solid fa-arrow-left"></i>
         </a>
-        <a href="#" class="burger">
-            <i class="fa-solid fa-bars"></i>
-        </a >
-    </nav>
+        <button class="mobile-nav" aria-controls="pri-nav" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
+            <ul data-visible="false" class="pri-nav flex">
+                <li class="act">
+                    <a href="#">
+                        <span aria-hidden="true">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/templates/profile.html">
+                        <span aria-hidden="true">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        My Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="/Search page/search_page.html">
+                        <span aria-hidden="true">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        Search
+                    </a>
+                </li>
+                <li>
+                    <a href="/notifications/noti_not.html">
+                        <span aria-hidden="true">
+                            <i class="fa-solid fa-bell"></i>
+                        </span>
+                        Notification
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div class="box-text">
         <h2 class="name-res">Luck & Roll</h2>
         <span class="box">

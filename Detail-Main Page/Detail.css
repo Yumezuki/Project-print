@@ -10,24 +10,19 @@ body {
     background-image: linear-gradient(#FBDA66, white);
     background-repeat: no-repeat;
     background-size: 100% 900px;
-    height: 1600px;
+    overflow-x: hidden;
+    height: 1620px;
 }
 
-.top-bar {
-    position: absolute;
-    width: 80%;
-    margin: 1em;
-    z-index: 1;
-    justify-content: space-between;
-}
 
 .back {
     height: 2.9em;
     width: 2.9em;
+    margin: 1em;
     background-color: #7F5A3F;
     border-radius: 50%;
-    display: inline-block;
     box-shadow: 0 4px 10px 0 rgb(56, 56, 56);
+    z-index: 20;
 }
 
 .fa-arrow-left{
@@ -36,19 +31,6 @@ body {
     color: white;
 } 
 
-.burger {
-    height: 2.6em;
-    width: 2.6em;
-    margin-left: 85%;
-    background-color: #F6DB78;
-    border-radius: 50%;
-    display: inline-block;
-    box-shadow: 0 4px 10px 0 rgb(56, 56, 56);
-    border-style: solid;
-    border-color: #7F5A3F;
-    position: absolute;
-}
-
 .fa-bars {
     margin: 30%;
     font-size: 18px;
@@ -56,6 +38,7 @@ body {
 }
 
 .img-main {
+    top: 0;
     height: 15em;
     width: 100%;
     background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.678)), url(https://images.wagwalkingweb.com/media/daily_wag/blog_articles/hero/1678934108.5188236/everything-you-need-to-know-about-siamese-cats.png);
@@ -64,17 +47,23 @@ body {
     background-position-x: center;
     background-position-y: center;
     display: inline-block;
-    position: relative;
+    position: absolute;
+    z-index: 0;
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
 }
 
 .box {
     height: auto;
     width: auto;
-    top: 20%;
     margin: 5%;
     background-color: white;
     display: inline-block;
-    position: absolute;
+    
     border-radius: 20px;
     z-index: 1;
     box-shadow: 0 4px 10px 0 gray;
@@ -84,22 +73,10 @@ body {
 }
 
 .name-res {
-    position: absolute;
     z-index: 1;
     margin-left: 10%;
-    margin-top: 4em;
     font-size: 2em;
     color: white;
-}
-
-.fa-facebook {
-    margin-top: 10%;
-    font-size: 35px;
-}
-
-.fa-tiktok {
-    font-size: 30px;
-    margin-left: 10%;
 }
 
 .button {
@@ -120,13 +97,11 @@ body {
 h1 {
     text-align: center;
     color: #7f5a3fc5;
-    margin-top: 37%;
-    position: relative;
 }
 
 .box-activities {
     height: auto;
-    width: auto;
+    width: 20em;
     margin: 5%;
     background-color: #FFF7DC;
     display: inline-block;
@@ -155,34 +130,70 @@ h1 {
     margin: 3%;
 }
 
-@media screen and (min-width: 1000px){
-    body {
-        height: 900px;
+
+.flex {
+    display: flex;
+}
+
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    display: inline;
+    padding: 1em;
+}
+
+.pri-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.pri-nav a {
+    text-decoration: none;
+    color: #7F5A3F;
+    font-size: 1.2em;
+}
+
+.pri-nav a > [aria-hidden="true"] {
+    margin-inline: .5em;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media screen and (max-width: 35em){
+    .pri-nav {
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 1em;
+        background: url(/static/image_bg.png), #F6DB78;
+        background-size: cover;
+        /* transform: translateX(100%); */
     }
 
-    .box-activities {
-        margin: 1% 5%;
-    }
+    /* .pri-nav[data-visible="true"] {
+        transform: translateX(0%);
+    } */
 
-    .name-res {
-        margin-left: 7%;
-        margin-top: 5.7em;
-        font-size: 2.5em;
-    }
-    
-    .img-main {
-        height: 25em;
-    }
-
-    .box {
-        top: 30%;
-    }
-
-    .burger {
-        margin-left: 87em;
-    }
-
-    h1 {
-        margin-top: 6%;
+    .mobile-nav {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background-color: #F6DB78;
+        border-style: solid;
+        border-color: #7F5A3F;
+        border-radius: 50%;
+        height: 3.5em;
+        aspect-ratio: 1;
+        margin: 1em 0;
+        right: 1em;
+        box-shadow: 0 4px 10px 0 rgb(56, 56, 56);
     }
 }
