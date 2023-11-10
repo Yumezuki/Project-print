@@ -21,11 +21,22 @@
     x.type = "password";
   }
 }
+
+function login() {
+    const username = document.getElementById('username').value
+    const password = document.getElementById('password').value
+    if(username == 'gypprt__' && password == 'gypprt1234') {
+      document.cookie = 'login=True'
+      location.reload()
+    }
+  }
+  function logout() {
+    document.cookie = 'login=False'
+    location.reload()
+  }
+
 </script>
-<body>
-  <div>
-    <img src="/static/image_bg.png" class="bag">
-  </div>
+<body background="/static/image_bg.png">
     <div class="screen-1">
     <div>
         <img src="/static/IMG_0568.png" class="center">
@@ -40,7 +51,7 @@
         <div class="email">
           <div class="sec-2">
             <ion-icon name="mail" role="img" class="md hydrated" aria-label="mail outline"></ion-icon>
-            <input type="email" name="email" placeholder="User" id="usename" style="font-family: 'Itim'; font-size: 125%; color: #7F5A3F;">
+            <input name="user" placeholder="User" id="usename" style="font-family: 'Itim'; font-size: 125%; color: #7F5A3F;">
           </div>
         </div>
         <div class="password">
@@ -50,8 +61,8 @@
             <ion-icon class="show-hide" name="eye" onclick="myFunction()"></ion-icon>
         </div>
         <div >
-          <a href="https://www.it.kmitl.ac.th/wp-content/uploads/2017/12/Chotipat-300x300.jpg" style="text-decoration:none" <font class="forget-txt">Forget Password ?</font></a>
-          <button class="login" style="font-family: 'Itim';">Login </button>
+          <a href="https://www.it.kmitl.ac.th" style="text-decoration:none" <font class="forget-txt">Forget Password ?</font></a>
+          <button class="login" style="font-family: 'Itim';" onclick="login()">Login </button>
         </div>
       </form>
     </div>
