@@ -1,0 +1,221 @@
+* {
+    font-family: 'Itim';
+    color: #7F5A3F;
+  }
+
+
+body{
+    background-image: linear-gradient(rgba(255,255,255,1) 18%, rgba(251,218,102,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+}
+
+.top-bar {
+    position: fixed;
+    width: 90%;
+    margin: 1em;
+}
+
+.back {
+    height: 2.9em;
+    width: 2.9em;
+    background-color: #7F5A3F;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 4px 10px 0;
+}
+
+.ttx{
+    display: inline-block;
+    margin-left: 3%;
+    color: #6d4b33;
+    font-weight: 500;
+    font-size: x-large;
+}
+.fa-arrow-left{
+    margin: 30%;
+    font-size: 20px;
+    color: white;
+} 
+.burger {
+    top: 18%;
+    height: 2.6em;
+    width: 2.6em;
+    margin-left: 40%;
+    background-color: #F6DB78;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 4px 10px 0;
+    border-style: solid;
+    border-color: #7F5A3F;
+    position: absolute;
+}
+
+.fa-bars {
+    margin: 30%;
+    font-size: 18px;
+    color: #7F5A3F;
+}
+
+.bag {
+    position: fixed;
+    top: 10%;
+    width: 100%;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+    background: rgb(255, 255, 255);
+    border-radius: 10000px;
+    width: 192px;
+    height: 192px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    border-style: solid;
+    border-color: #6d4b33;
+    position: relative;
+}
+
+.name_show{
+    margin: 0;
+    font-weight: 800;
+    font-size: xx-large;
+    text-align: center;
+    color: #7F5A3F;
+}
+
+.usename{
+    width: 90%;
+    margin: 1em;
+}
+
+.name {
+    background: white;
+    box-shadow: 0 0 2em #7f5a3f6e;
+    border-style: solid;
+    border-color: #7F5A3F;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 30px;
+    color: #7F5A3F;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 51%;
+    font-family: 'Itim'; 
+    font-size: 125%; 
+  }
+
+  .surname {
+    background: white;
+    box-shadow: 0 0 2em #7f5a3f6e;
+    border-style: solid;
+    border-color: #7F5A3F;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 30px;
+    color: #7F5A3F;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    right: 10%;
+    font-family: 'Itim'; 
+    font-size: 125%; 
+  }
+
+  .email {
+    background: white;
+    box-shadow: 0 0 2em #7f5a3f6e;
+    border-style: solid;
+    border-color: #7F5A3F;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 30px;
+    color: #7F5A3F;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    right: 10%;
+  }
+
+  .email ion-icon {
+    color: #7F5A3F;
+    margin-bottom: -0.2em;
+    margin-left: 0.5;
+    top: 30%;
+    position: absolute;
+  }
+  .user {
+    background: white;
+    box-shadow: 0 0 2em #7f5a3f6e;
+    border-style: solid;
+    border-color: #7F5A3F;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 30px;
+    color: #7F5A3F;
+    position: absolute;
+    top: 67%;
+    left: 10%;
+    right: 10%;
+  }
+  .user ion-icon {
+    color: #7F5A3F;
+    margin-bottom: -0.2em;
+    margin-left: 0.5;
+    top: 30%;
+    position: absolute;
+  }
+
+  input {
+    outline: none;
+    border: none;
+  }
+
+  input::-moz-placeholder {
+    color: #7F5A3F;
+    font-size: 0.9em;
+  }
+
+  input:-ms-input-placeholder {
+    color: #7F5A3F;
+    font-size: 0.9em;
+  }
+
+  input::placeholder {
+    color: #7f5a3fbd;
+    font-size: 0.9em;
+  }
+
+  .fin{
+    font-family: 'Itim'; 
+    font-size: 125%; 
+    margin: 0%;
+    margin-left: 10%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .profile-img{
+        margin-top: 10%;
+    }
+    .burger{
+        margin-left: 95%;
+    }
+  }
