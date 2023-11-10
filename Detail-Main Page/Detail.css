@@ -112,7 +112,6 @@ body {
     font-size: 15px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     box-shadow: 0 4px 10px 0 gray;
     cursor: pointer;
     float: right;
