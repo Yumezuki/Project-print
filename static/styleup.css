@@ -236,3 +236,41 @@ body {
   button {
     cursor: pointer;
   }
+
+  @media screen and (min-width: 1000px) {
+    .bago {
+      top: 0%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .line{
+      border-radius: 15px;
+      padding: 0.5%; 
+      width: 25%;
+      height: 0%;
+      position: absolute;
+      left: 48%;
+      top: 18%;
+    }
+    .center{
+      width: 30%;
+      left: 40%;
+    }
+    .CNA-txt{
+      left: 42%;
+    }
+    .signup {
+      left: 42%;
+      width:15%;
+    }
+    .lo-txt {
+     left: 85%;
+    }
+    .input {
+      width: 90%;
+    }
+    .fin{
+      width: 90%;
+    }
+  }

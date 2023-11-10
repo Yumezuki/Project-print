@@ -81,7 +81,6 @@ body {
   padding: 0.5em;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
   border-radius: 30px;
   color: #7F5A3F;
   position: absolute;
@@ -118,7 +117,6 @@ body {
   padding: 0.5em;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
   border-radius: 30px;
   position: absolute;
   top: 50%;
@@ -222,4 +220,67 @@ button {
   position: absolute;
   top: 5%;
   width: 100%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .bag {
+      top: 0%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .line{
+      border-radius: 15px;
+      padding: 0.5%; 
+      width: 25%;
+      height: 0%;
+      position: absolute;
+      left: 48%;
+      top: 18%;
+    }
+    .center{
+      width: 30%;
+      left: 40%;
+    }
+    .dog{
+      width: 10%;
+      left: 75%;
+    }
+    .goo{
+      width: 5%;
+      position: absolute;
+      top: 72%;
+      left: 32%;
+    }
+    .fac{
+      width: 5%;
+      position: absolute;
+      top: 72%;
+      left: 47%;
+    }
+    
+    .gi{
+      width: 5%;
+      position: absolute;
+      top: 72%;
+      left: 62%;
+    }
+    .SML-txt{
+      left: 45%;
+    }
+    .screen-1 .email input {
+      width: 90%;
+    }
+    .screen-1 .password input {
+      width: 90%;
+    }
+    .si-txt{
+      left: 80%;
+    }
+    .Dh-txt{
+      left: 10%;
+    }
+    .or-txt{
+      left: 50%;
+    }
   }
