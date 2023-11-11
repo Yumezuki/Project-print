@@ -1,0 +1,274 @@
+body {
+  background-color: #F6DB78;
+}
+
+* {
+  font-family: 'Itim';
+}
+
+.center {
+  position: absolute;
+  left: 27%;
+  top: 10%;
+  width: 50%;
+}
+.line {
+  border-radius: 25px;
+  background: #E0554D;
+  padding: 0.5%; 
+  width: 40%;
+  height: 0%;
+  position: absolute;
+  left: 40%;
+  top: 13%;
+}
+.dog {
+  display: block;
+  position: absolute;
+  left: 45%;
+  top: 30%;
+  width: 40%;
+}
+
+.login-txt {
+  bottom: 60%;
+  position: absolute;
+  left: 15%;
+  font-size: 28px;
+  color: #7F5A3F;
+}
+.or-txt {
+  bottom: 34.7%;
+  position: absolute;
+  left: 47%;
+  font-size: 28px;
+
+  color: #7f5a3f98;
+}
+.SML-txt {
+  bottom: 29%;
+  position: absolute;
+  left: 30%;
+  font-size: 21px;
+  font-weight: 600;
+  color: #7F5A3F;
+}
+.line-2{
+  border-radius: 25px;
+  background: #7f5a3f81;
+  padding: 0.5%;
+  width: 30%;
+  height: 0%;
+  position: absolute;
+  bottom: 34%;
+  left: 13%;
+}
+.line-3{
+  border-radius: 25px;
+  background: #7f5a3f81;
+  padding: 0.5%;
+  width: 30%;
+  height: 0%;
+  position: absolute;
+  bottom: 34%;
+  left: 57%;
+}
+.screen-1 .email {
+  background: white;
+  box-shadow: 0 0 2em #7f5a3f6e;
+  border-style: solid;
+  border-color: #7F5A3F;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  color: #7F5A3F;
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  right: 10%;
+}
+.screen-1 .email input {
+  outline: none;
+  border: none;
+}
+.screen-1 .email input::-moz-placeholder {
+  color: #7F5A3F;
+  font-size: 0.9em;
+}
+.screen-1 .email input:-ms-input-placeholder {
+  color: #7F5A3F;
+  font-size: 0.9em;
+}
+.screen-1 .email input::placeholder {
+  color: #7f5a3fbd;
+  font-size: 0.9em;
+}
+.screen-1 .email ion-icon {
+  color: #7F5A3F;
+  margin-bottom: -0.2em;
+  margin-left: 0.5;
+}
+.screen-1 .password {
+  background: white;
+  box-shadow: 0 0 2em #7f5a3f54;
+  border-style: solid;
+  border-color: #7F5A3F;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+}
+.screen-1 .password input {
+  outline: none;
+  border: none;
+}
+.screen-1 .password input::-moz-placeholder {
+  color: #7F5A3F;
+  font-size: 0.9em;
+}
+.screen-1 .password input:-ms-input-placeholder {
+  color: #7F5A3F;
+  font-size: 0.9em;
+}
+.screen-1 .password input::placeholder {
+  color: #7f5a3fbe;
+  font-size: 0.9em;
+}
+.screen-1 .password ion-icon {
+  color: #7F5A3F;
+  margin-bottom: -0.2em;
+}
+.screen-1 .password .show-hide {
+  display: inline-block;
+  position: absolute;
+  right: 4%;
+  top : 38%;
+}
+.screen-1 .login {
+  padding: 0.5em;
+  background: #7F5A3F;
+  box-shadow: 0 0 2em #7f5a3f54;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  position: absolute;
+  top: 125%;
+  left: 70%;
+  font-weight: 100;
+  font-size: 125%;
+  width: 26%;
+}
+
+.forget-txt {
+  top: 150%;
+  position: absolute;
+  left: 5%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #7F5A3F;
+}
+
+.Dh-txt {
+  bottom: 5%;
+  position: absolute;
+  left: 8%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #7F5A3F;
+}
+
+.si-txt {
+  bottom: 5%;
+  position: absolute;
+  left: 67%;
+  font-size: 35px;
+  font-weight: 1000;
+  color: #ffffff;
+  -webkit-text-stroke: 1.5px #7F5A3F;
+}
+
+.goo{
+  width: 8%;
+  position: absolute;
+  top: 72%;
+  left: 32%;
+}
+.fac{
+  width: 8%;
+  position: absolute;
+  top: 72%;
+  left: 47%;
+}
+
+.gi{
+  width: 8%;
+  position: absolute;
+  top: 72%;
+  left: 62%;
+}
+
+button {
+  cursor: pointer;
+}
+
+  @media screen and (min-width: 1000px) {
+    .line{
+      border-radius: 15px;
+      padding: 0.5%; 
+      width: 25%;
+      height: 0%;
+      position: absolute;
+      left: 48%;
+      top: 18%;
+    }
+    .center{
+      width: 30%;
+      left: 40%;
+    }
+    .dog{
+      width: 10%;
+      left: 75%;
+    }
+    .goo{
+      width: 5%;
+      position: absolute;
+      top: 72%;
+      left: 32%;
+    }
+    .fac{
+      width: 5%;
+      position: absolute;
+      top: 72%;
+      left: 47%;
+    }
+    
+    .gi{
+      width: 5%;
+      position: absolute;
+      top: 72%;
+      left: 62%;
+    }
+    .SML-txt{
+      left: 45%;
+    }
+    .screen-1 .email input {
+      width: 90%;
+    }
+    .screen-1 .password input {
+      width: 90%;
+    }
+    .si-txt{
+      left: 80%;
+    }
+    .Dh-txt{
+      left: 10%;
+    }
+    .or-txt{
+      left: 50%;
+    }
+  }

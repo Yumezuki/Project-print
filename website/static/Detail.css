@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim', cursive;
+}
+
+body {
+    background-image: linear-gradient(#FBDA66, white);
+    background-repeat: no-repeat;
+    background-size: 100% 900px;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+/* 
+
+Button back 
+
+*/
+
+.back {
+    top: 0;
+    text-decoration: none;
+    position: fixed;
+    display: flex;
+    height: 2.9em;
+    width: 2.9em;
+    margin: 1em;
+    background-color: #7F5A3F;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px 0 rgb(56, 56, 56);
+    z-index: 1;
+}
+
+.fa-arrow-left{
+    margin: 30%;
+    font-size: 20px;
+    color: white;
+} 
+
+/* 
+
+Image Main 
+
+*/
+
+.img-main {
+    top: 0;
+    height: 15em;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.678)), url(https://images.wagwalkingweb.com/media/daily_wag/blog_articles/hero/1678934108.5188236/everything-you-need-to-know-about-siamese-cats.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+}
+
+/* 
+
+Text about shop 
+
+*/
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40%;
+}
+
+.name-res {
+    z-index: 1;
+    margin-left: 10%;
+    font-size: 2em;
+    color: white;
+}
+
+.box {
+    height: auto;
+    width: auto;
+    margin: 3% 5% 5%;
+    background-color: white;
+    display: inline-block;
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 0 4px 10px 0 gray;
+    text-align: left;
+    padding: 1em;
+    color: #7F5A3F;
+}
+
+.button {
+    margin-top: 5%;
+    width: 10em;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #F6DB78;
+    color: #7F5A3F;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px 0 gray;
+    cursor: pointer;
+    float: right;
+}
+
+/* 
+
+Activities 
+
+*/
+
+.rec-act {
+    text-align: center;
+    color: #7f5a3fc5;
+}
+
+.box-activities {
+    height: auto;
+    width: 20em;
+    margin: 5%;
+    background-color: #FFF7DC;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 0 gray;
+    text-align: center;
+    padding: 1em;
+    color: #7F5A3F;
+    align-items: center;
+}
+
+.img-act {
+    height: 12em;
+    width: 20em;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 gray;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/RedCat_8727.jpg/1200px-RedCat_8727.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: relative;
+}
+
+.name-act {
+    margin: 3%;
+}
+
