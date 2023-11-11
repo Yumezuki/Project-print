@@ -7,30 +7,35 @@
   <title>WHEREVER</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
   <link rel="stylesheet" href="/static/search_style.css">
+  <script src="https://kit.fontawesome.com/8fdb36e626.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="background_block">
-    <img src="/static/Images/search_here_bg.png" class="background">
+  <!-- Logo -->
+
+  <div class="back_logo">
+    <div class="logo_button">
+        <img class="logo" src="/static/Images/Logo_WHEREVER(Color).png">
+        <img class="text" src="/static/Images/textwherever.png">
+    </div>
   </div>
-  <div class="logo_button">
-    <img class="logo" src="/static/Images/Logo_WHEREVER2.png">
-    <img class="text" src="/static/Images/Text_WHEREVER.png">
-    <img class="tab" src="/static/Images/Tab.png">
-  </div>
-  <div class="search_bar">
-    <input type="text" name="Search" placeholder="Search" id="Search" style="font-family: 'Itim'; font-size: 125%; color: #7F5A3F;">
-    <img class="search_button" src="/static/Images/search_small.png">
-  </div>
+
+  <!-- Bottom Bar -->
+
   <div class="bottom_bar">
-
-
     <span class="long_circle">
-        <img src="/static/Images/home_logo.png" class="home_logo">
-        <img src="/static/Images/noti_logo.png" class="noti_logo">
+        <a href="#"><i class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href=""><i class="fa-solid fa-bell"></i></a>
     </span>
-    <span class="dot">
-        <img src="/static/Images/search_logo.png" class="search_logo">
-    </span>
+</div>
+
+  <!-- Search Bar -->
+
+  <div class="search_bar">
+    <input type="text" name="Search" placeholder="Search" id="Search">
+    <button class="press"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
 </div>
 </body>
 </html>

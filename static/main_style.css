@@ -8,20 +8,18 @@ Logo
 
 */
 
-.backlogo{
+.back_logo{
+  top: 0;
   width: 100%;
   height: 9%;
   position: fixed;
-  top: 0;
   background-color: rgb(255, 255, 255);
 }
 
 .logo_button {
   display: flex;
-  top: 1em;
-  left: 1em;
-  position: fixed;
   height: 1.8em;
+  margin: 1em;
 }
 
 
@@ -49,6 +47,7 @@ Logo
   border-color: #7F5A3F;
   border-style: solid;
   text-align: center;
+  box-shadow: 0 5px 6px 1px #7f5a3f6b;
 }
 
 .long_circle i {
