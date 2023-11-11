@@ -11,18 +11,27 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 900px;
     overflow-x: hidden;
-    height: 1620px;
+    height: 100vh;
 }
 
+/* 
+
+Button back 
+
+*/
 
 .back {
+    top: 0;
+    text-decoration: none;
+    position: fixed;
+    display: flex;
     height: 2.9em;
     width: 2.9em;
     margin: 1em;
     background-color: #7F5A3F;
     border-radius: 50%;
     box-shadow: 0 4px 10px 0 rgb(56, 56, 56);
-    z-index: 20;
+    z-index: 1;
 }
 
 .fa-arrow-left{
@@ -31,11 +40,11 @@ body {
     color: white;
 } 
 
-.fa-bars {
-    margin: 30%;
-    font-size: 18px;
-    color: #7F5A3F;
-}
+/* 
+
+Image Main 
+
+*/
 
 .img-main {
     top: 0;
@@ -51,25 +60,16 @@ body {
     z-index: 0;
 }
 
+/* 
+
+Text about shop 
+
+*/
+
 .box-text {
     display: flex;
     flex-direction: column;
-    margin-top: 15%;
-}
-
-.box {
-    height: auto;
-    width: auto;
-    margin: 5%;
-    background-color: white;
-    display: inline-block;
-    
-    border-radius: 20px;
-    z-index: 1;
-    box-shadow: 0 4px 10px 0 gray;
-    text-align: left;
-    padding: 1em;
-    color: #7F5A3F;
+    margin-top: 40%;
 }
 
 .name-res {
@@ -77,6 +77,20 @@ body {
     margin-left: 10%;
     font-size: 2em;
     color: white;
+}
+
+.box {
+    height: auto;
+    width: auto;
+    margin: 3% 5% 5%;
+    background-color: white;
+    display: inline-block;
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 0 4px 10px 0 gray;
+    text-align: left;
+    padding: 1em;
+    color: #7F5A3F;
 }
 
 .button {
@@ -94,7 +108,13 @@ body {
     float: right;
 }
 
-h1 {
+/* 
+
+Activities 
+
+*/
+
+.rec-act {
     text-align: center;
     color: #7f5a3fc5;
 }
@@ -130,70 +150,3 @@ h1 {
     margin: 3%;
 }
 
-
-.flex {
-    display: flex;
-}
-
-.primary-header {
-    align-items: center;
-    justify-content: space-between;
-}
-
-li {
-    display: inline;
-    padding: 1em;
-}
-
-.pri-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-}
-
-.pri-nav a {
-    text-decoration: none;
-    color: #7F5A3F;
-    font-size: 1.2em;
-}
-
-.pri-nav a > [aria-hidden="true"] {
-    margin-inline: .5em;
-}
-
-.mobile-nav {
-    display: none;
-}
-
-@media screen and (max-width: 35em){
-    .pri-nav {
-        position: fixed;
-        z-index: 1000;
-        inset: 0 0 0 30%;
-        flex-direction: column;
-        padding: min(30vh, 10rem) 1em;
-        background: url(/static/image_bg.png), #F6DB78;
-        background-size: cover;
-        /* transform: translateX(100%); */
-    }
-
-    /* .pri-nav[data-visible="true"] {
-        transform: translateX(0%);
-    } */
-
-    .mobile-nav {
-        display: block;
-        position: absolute;
-        z-index: 9999;
-        background-color: #F6DB78;
-        border-style: solid;
-        border-color: #7F5A3F;
-        border-radius: 50%;
-        height: 3.5em;
-        aspect-ratio: 1;
-        margin: 1em 0;
-        right: 1em;
-        box-shadow: 0 4px 10px 0 rgb(56, 56, 56);
-    }
-}
