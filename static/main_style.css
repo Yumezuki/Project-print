@@ -2,6 +2,11 @@
     font-family: "Itim";
 }
 
+/* 
+
+Logo 
+
+*/
 
 .backlogo{
   width: 100%;
@@ -18,6 +23,14 @@
   position: fixed;
   height: 1.8em;
 }
+
+
+/* 
+
+  Bottom Bar
+
+*/
+
 
 .bottom_bar {
   display: flex;
@@ -43,6 +56,12 @@
   padding: .5em .8em;
   color: #7F5A3F;
 }
+
+/* 
+
+Content 
+
+*/
 
 .dis{
   display: flex;
