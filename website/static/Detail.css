@@ -24,14 +24,13 @@ Button back
     top: 0;
     text-decoration: none;
     position: fixed;
-    display: flex;
     height: 2.9em;
     width: 2.9em;
     margin: 1em;
     background-color: #7F5A3F;
     border-radius: 50%;
     box-shadow: 0 4px 10px 0 rgb(56, 56, 56);
-    z-index: 1;
+    z-index: 9999;
 }
 
 .fa-arrow-left{
@@ -47,17 +46,11 @@ Image Main
 */
 
 .img-main {
-    top: 0;
     height: 15em;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.678)), url(https://images.wagwalkingweb.com/media/daily_wag/blog_articles/hero/1678934108.5188236/everything-you-need-to-know-about-siamese-cats.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
-    display: inline-block;
-    position: absolute;
-    z-index: 0;
+    object-fit: cover;
 }
 
 /* 
@@ -67,26 +60,24 @@ Text about shop
 */
 
 .box-text {
+    margin-top: -5em;
     display: flex;
     flex-direction: column;
-    margin-top: 40%;
 }
 
 .name-res {
-    z-index: 1;
-    margin-left: 10%;
+    margin-left: 3.5em;
     font-size: 2em;
     color: white;
+    text-shadow: 5px 5px 10px black;
 }
 
 .box {
     height: auto;
     width: auto;
-    margin: 3% 5% 5%;
+    margin: 1% 5%;
     background-color: white;
-    display: inline-block;
     border-radius: 20px;
-    z-index: 1;
     box-shadow: 0 4px 10px 0 gray;
     text-align: left;
     padding: 1em;
@@ -119,10 +110,15 @@ Activities
     color: #7f5a3fc5;
 }
 
-.box-activities {
+.box-act {
+    width: 100%;
+    text-align: center;
+}
+
+.activities {
     height: auto;
     width: 20em;
-    margin: 5%;
+    margin: 1%;
     background-color: #FFF7DC;
     display: inline-block;
     border-radius: 20px;
@@ -136,10 +132,8 @@ Activities
 .img-act {
     height: 12em;
     width: 20em;
-    display: inline-block;
     border-radius: 10px;
     box-shadow: 0 4px 10px 0 gray;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/RedCat_8727.jpg/1200px-RedCat_8727.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -150,3 +144,17 @@ Activities
     margin: 3%;
 }
 
+@media screen and (max-width: 750px){
+
+    .activities {
+        margin: 5% 5% 0;
+    }
+
+    .name-res {
+        margin-left: 10%;
+    }
+
+    .box {
+        margin: 3% 5% 5%;
+    }
+}
