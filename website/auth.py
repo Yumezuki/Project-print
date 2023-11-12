@@ -66,3 +66,25 @@ def sign_up():
             return redirect(url_for('auth.login'))
 
     return render_template("signup.html", user=current_user)
+
+@auth.route('/forgotpassword', methods=['GET', 'POST'])
+def password():
+    if request.method == 'POST':
+        username = request.form.get('username')
+        password = request.form.get('password1')
+        password2 = request.form.get('password2')
+
+        user = User.query.filter_by(username=username).first()
+        if user:
+            if password == password2:
+                hashed_password = generate_password_hash(password, method='sha256')
+                user.password = hashed_password
+                db.session.commit()
+                flash('Password changed successfully!', category='success')
+                return redirect(url_for('auth.login'))
+            else:
+                flash('Passwords do not match.', category='error')
+        else:
+            flash('Username does not exist.', category='error')
+
+    return render_template("forgot.html", user=current_user)

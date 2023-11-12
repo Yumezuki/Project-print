@@ -11,13 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <script src="https://kit.fontawesome.com/8fdb36e626.js" crossorigin="anonymous"></script>
 </head>
-<script>
-    var profileImageUrl = "{{ user_data['image'] }}";
-    var profileInput = document.getElementById("profileInput");
-    if (profileInput) {
-            profileInput.style.backgroundImage = 'url(' + profileImageUrl + ')';
-        }
-</script>
 <body>
     <!-- Button back -->
 
@@ -39,7 +32,7 @@
     <!-- Image & Username  -->
     <div class="content">
         <div class="avatar">
-            <div class="profile-img" id="profileInput"></div>
+                <img src="{{ user_data['image'] }}" class="profile-img">
         </div>
         <div class="username">
             <p class="name_show" id ="username-p">{{ user_data['username'] }}</p>
