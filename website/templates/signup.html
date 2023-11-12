@@ -20,7 +20,7 @@
     } else {
       x.type = "password";
     }
-  }
+    }
   function myFunction2() {
     var x = document.getElementById("password2");
     if (x.type === "password") {
@@ -29,6 +29,10 @@
       x.type = "password";
     }
   }
+  function onImageInputChange() {
+    var imageUrl = document.getElementById("image").value;
+    document.getElementById("profileInput").style.backgroundImage = "url(" + imageUrl + ")";
+}
 </script>
 <body background="/static/Images/image_bg.png">
     <div>
@@ -72,6 +76,13 @@
                 <ion-icon class="show-hide" name="eye" onclick="myFunction2()"></ion-icon>
             </div>
         </div>
+            <div class="avatar">
+                <div class="profile-img" id="profileInput"></div>
+                    <div>
+                        <input class="mage" type="text" name="image" placeholder="URL" id="image" oninput="onImageInputChange()">
+                    </div>
+               </div>
+            </div>
         <div>
             <button type="submit" class="signup" style="font-family: 'Itim';">Sign Up</button>
         </div>

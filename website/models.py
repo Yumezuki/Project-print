@@ -9,3 +9,4 @@ class User(db.Model, UserMixin):
     surname = db.Column(db.String(150))
     username = db.Column(db.String(150))
     password = db.Column(db.String(150))
+    image = db.Column(db.String(300))

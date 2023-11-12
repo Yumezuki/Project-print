@@ -9,7 +9,7 @@
 
 
 body{
-  background-image: url(/website/static/Images/image_bg.png), linear-gradient(#FBDA66, white);
+  background-image: url(/static/Images/image_bg.png), linear-gradient(#FBDA66, white);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: center;
