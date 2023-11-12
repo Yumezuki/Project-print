@@ -16,10 +16,10 @@ def main_page():
 def profile():
     return render_template("profile.html")
 
-@views.route('/notification')
+@views.route('/noti')
 def noti_have():
     return render_template("noti_have.html")
 
-@views.route('/detail')
+@views.route('/details')
 def detail():
     return render_template("Detail.html")
