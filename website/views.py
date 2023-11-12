@@ -17,10 +17,6 @@ def main_page():
 def noti_have():
     return render_template("noti_have.html")
 
-@views.route('/details')
-def detail():
-
-    return render_template("Detail.html")
 
 @views.route('/profile', methods=['GET', 'POST'])
 @login_required
@@ -34,11 +30,66 @@ def profile():
     }
     return render_template("profile.html", user_data=user_data)
 
+@views.route('/totticafe')
+def totti():
+    return render_template("detail_totticafe.html")
 
-# @views.route('/forgotpassword', methods=['GET', 'POST'])
-# def forgot():
-#     user_data = {
-#         "username": current_user.username,
-#         "password": current_user.password
-#     }
-#     return render_template("forgot.html", user_data=user_data)
+@views.route('/timbercafe')
+def tim():
+    return render_template("detail_timbercafe.html")
+
+@views.route('/the_boon')
+def theboon():
+    return render_template("detail_the_boon.html")
+
+@views.route('/swimming_pool')
+def swim():
+    return render_template("detail_swimming_pool.html")
+
+@views.route('/sport_field')
+def sport():
+    return render_template("detail_sport_field.html")
+
+@views.route('/saisaicafe')
+def saisai():
+    return render_template("detail_saisaicafe.html")
+
+@views.route('/playlistcafe')
+def playlist():
+    return render_template("detail_playlistcafe.html")
+
+@views.route('/paplerncafe')
+def paplern():
+    return render_template("detail_paplerncafe.html")
+
+@views.route('/nommahalai')
+def nommahalia():
+    return render_template("detail_nommahalai.html")
+
+@views.route('/mesmile')
+def mesmile():
+    return render_template("detail_mesmile.html")
+
+@views.route('/mala')
+def mala():
+    return render_template("detail_mala.html")
+
+@views.route('/luck&roll')
+def luckroll():
+    return render_template("detail_luck&roll.html")
+
+@views.route('/lanprajom')
+def lanprajom():
+    return render_template("detail_lanprajom.html")
+
+@views.route('/huatake_market')
+def huatake():
+    return render_template("detail_huatake_market.html")
+
+@views.route('/fitness')
+def fitness():
+    return render_template("detail_fitness.html")
+
+@views.route('/decisivecafe')
+def deciviver():
+    return render_template("detail_decisivecafe.html")
