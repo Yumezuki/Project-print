@@ -12,4 +12,14 @@ views = Blueprint('views', __name__)
 def main_page():
     return render_template("main_page.html", user=current_user)
 
+@views.route('/profile')
+def profile():
+    return render_template("profile.html")
 
+@views.route('/notification')
+def noti_have():
+    return render_template("noti_have.html")
+
+@views.route('/detail')
+def detail():
+    return render_template("Detail.html")
