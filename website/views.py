@@ -19,6 +19,7 @@ def noti_have():
 
 @views.route('/details')
 def detail():
+
     return render_template("Detail.html")
 
 @views.route('/profile', methods=['GET', 'POST'])
