@@ -35,6 +35,10 @@ def profile():
     return render_template("profile.html", user_data=user_data)
 
 
-@views.route('/forgotpassword')
-def forgot():
-    return render_template("forgot.html")
+# @views.route('/forgotpassword', methods=['GET', 'POST'])
+# def forgot():
+#     user_data = {
+#         "username": current_user.username,
+#         "password": current_user.password
+#     }
+#     return render_template("forgot.html", user_data=user_data)

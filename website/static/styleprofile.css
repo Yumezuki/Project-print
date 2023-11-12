@@ -79,6 +79,7 @@ Image & Username
   border-color: #6d4b33;
   position: relative;
   box-shadow: 0 5px 6px 1px #7f5a3f6b;
+  object-fit: cover;
 }
 
 .name_show{
