@@ -36,5 +36,5 @@ def profile():
 
 
 @views.route('/forgotpassword')
-def noti_have():
+def forgot():
     return render_template("forgot.html")
