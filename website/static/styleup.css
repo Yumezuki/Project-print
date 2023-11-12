@@ -1,273 +1,282 @@
-body {
-  background-color: #F6DB78;
-}
-
 * {
     font-family: 'Itim';
     color: #7F5A3F;
-  }
+}
 
-  .center {
-  position: absolute;
-  left: 27%;
-  top: 10%;
-  width: 50%;
-  }
-  .line {
-  border-radius: 25px;
-  background: #E0554D;
-  padding: 0.5%; 
-  width: 40%;
-  height: 0%;
-  position: absolute;
-  left: 40%;
-  top: 13%;
-  }
+body {
+  background-image: url(/website/static/Images/image_bg.png);
+  background-color: #F6DB78;
+  height: auto;
+}
 
-  .CNA-txt {
-    top: 23%;
-    position: absolute;
-    left: 18%;
-    font-size: 30px;
-    font-weight: 500;
-    color: #7F5A3F;
-  }
+/* 
 
-  .name {
-    background: white;
-    box-shadow: 0 0 2em #7f5a3f6e;
-    border-style: solid;
-    border-color: #7F5A3F;
-    padding: 0.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 30px;
-    color: #7F5A3F;
-    position: absolute;
-    top: 28%;
-    left: 10%;
-    right: 51%;
-    font-family: 'Itim'; 
-    font-size: 125%; 
-  }
+Logo
 
-  .surname {
-    background: white;
-    box-shadow: 0 0 2em #7f5a3f6e;
-    border-style: solid;
-    border-color: #7F5A3F;
-    padding: 0.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 30px;
-    color: #7F5A3F;
-    position: absolute;
-    top: 28%;
-    left: 51%;
-    right: 10%;
-    font-family: 'Itim'; 
-    font-size: 125%; 
-  }
+*/
 
-  .email {
-    background: white;
-    box-shadow: 0 0 2em #7f5a3f6e;
-    border-style: solid;
-    border-color: #7F5A3F;
-    padding: 0.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 30px;
-    color: #7F5A3F;
-    position: absolute;
-    top: 36%;
-    left: 10%;
-    right: 10%;
-  }
+.logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
 
-  .email ion-icon {
-    color: #7F5A3F;
-    margin-bottom: -0.2em;
-    margin-left: 0.5;
-  }
-  .user {
-    background: white;
-    box-shadow: 0 0 2em #7f5a3f6e;
-    border-style: solid;
-    border-color: #7F5A3F;
-    padding: 0.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 30px;
-    color: #7F5A3F;
-    position: absolute;
-    top: 44%;
-    left: 10%;
-    right: 10%;
-  }
-  .user ion-icon {
-    color: #7F5A3F;
-    margin-bottom: -0.2em;
-    margin-left: 0.5;
-  }
-  .password {
-    background: white;
-    box-shadow: 0 0 2em #7f5a3f6e;
-    border-style: solid;
-    border-color: #7F5A3F;
-    padding: 0.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 30px;
-    color: #7F5A3F;
-    position: absolute;
-    top: 52%;
-    left: 10%;
-    right: 10%;
-  }
+.logo-text {
+  width: 55%;
+}
 
-  .passwordcheck {
-    background: white;
-    box-shadow: 0 0 2em #7f5a3f6e;
-    border-style: solid;
-    border-color: #7F5A3F;
-    padding: 0.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 30px;
-    color: #7F5A3F;
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    right: 10%;
-  }
+.line {
+border-radius: 25px;
+background: #E0554D;
+padding: 0.5%;
+width: 40%;
+margin: .5em .5em .5em 9.5em;
+}
 
-  .password ion-icon {
-    color: #7F5A3F;
-    margin-bottom: -0.2em;
-    margin-left: 0.5;
-  }
+.cna {
+  text-align: center;
+  margin: 5%;
+}
 
-  .password .show-hide {
-    display: inline-block;
-    position: absolute;
-    right: 4%;
-    top : 38%;
-  }
+.CNA-txt {
+  top: 23%;
+  left: 18%;
+  font-size: 30px;
+  font-weight: 500;
+  color: #7F5A3F;
+}
 
-  .passwordcheck .show-hide {
-    display: inline-block;
-    position: absolute;
-    right: 4%;
-    top : 38%;
-  }
+/* 
 
-  .fin{
-    font-family: 'Itim'; 
-    font-size: 125%; 
-  }
+Form
 
-  input {
-    outline: none;
-    border: none;
-  }
+*/
 
-  input::-moz-placeholder {
-    color: #7F5A3F;
-    font-size: 0.9em;
-  }
+.form-group {
+  margin: 5%;
+}
 
-  input:-ms-input-placeholder {
-    color: #7F5A3F;
-    font-size: 0.9em;
-  }
+.name_sur {
+  display: flex;
+  width: auto;
+}
 
-  input::placeholder {
-    color: #7f5a3fbd;
-    font-size: 0.9em;
-  }
+.name , .surname{
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 2em #7f5a3f6e;
+  border-style: solid;
+  border-color: #7F5A3F;
+  padding: 0.5em;
+  display: flex;
+  border-radius: 30px;
+  color: #7F5A3F;
+  font-family: 'Itim'; 
+  font-size: 125%; 
+}
 
+.surname {
+  margin-left: .5em;
+}
+
+.email {
+  background: white;
+  box-shadow: 0 0 2em #7f5a3f6e;
+  border-style: solid;
+  border-color: #7F5A3F;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 30px;
+  color: #7F5A3F;
+
+  top: 36%;
+  left: 10%;
+  right: 10%;
+}
+
+.email ion-icon {
+  color: #7F5A3F;
+  margin-bottom: -0.2em;
+  margin-left: 0.5;
+}
+.user {
+  background: white;
+  box-shadow: 0 0 2em #7f5a3f6e;
+  border-style: solid;
+  border-color: #7F5A3F;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 30px;
+  color: #7F5A3F;
+
+  top: 44%;
+  left: 10%;
+  right: 10%;
+}
+.user ion-icon {
+  color: #7F5A3F;
+  margin-bottom: -0.2em;
+  margin-left: 0.5;
+}
+
+.password {
+  background: white;
+  box-shadow: 0 0 2em #7f5a3f6e;
+  border-style: solid;
+  border-color: #7F5A3F;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 30px;
+  color: #7F5A3F;
+
+  top: 52%;
+  left: 10%;
+  right: 10%;
+}
+
+.passwordcheck {
+  background: white;
+  box-shadow: 0 0 2em #7f5a3f6e;
+  border-style: solid;
+  border-color: #7F5A3F;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 30px;
+  color: #7F5A3F;
+
+  top: 60%;
+  left: 10%;
+  right: 10%;
+}
+
+.password ion-icon {
+  color: #7F5A3F;
+  margin-bottom: -0.2em;
+  margin-left: 0.5;
+}
+
+.password .show-hide {
+  display: inline-block;
+
+  right: 4%;
+  top : 38%;
+}
+
+.passwordcheck .show-hide {
+  display: inline-block;
+
+  right: 4%;
+  top : 38%;
+}
+
+.fin{
+  font-family: 'Itim'; 
+  font-size: 125%; 
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+input::-moz-placeholder {
+  color: #7F5A3F;
+  font-size: 0.9em;
+}
+
+input:-ms-input-placeholder {
+  color: #7F5A3F;
+  font-size: 0.9em;
+}
+
+input::placeholder {
+  color: #7f5a3fbd;
+  font-size: 0.9em;
+}
+
+.signup {
+  padding: 0.5em;
+  background: #7F5A3F;
+  box-shadow: 0 0 2em #7f5a3f54;
+  color: white;
+  border: none;
+  border-radius: 100px;
+
+  top: 82%;
+  left: 32%;
+  font-weight: 100;
+  font-size: 125%;
+  width:37%;
+}
+
+.al-txt {
+  bottom: 5%;
+
+  left: 8%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #7F5A3F;
+}
+
+.lo-txt {
+  bottom: 2%;
+
+  left: 67%;
+  font-size: 35px;
+  font-weight: 1000;
+  color: #ffffff;
+  -webkit-text-stroke: 1.5px #7F5A3F;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  .bago {
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .line{
+    border-radius: 15px;
+    padding: 0.5%; 
+    width: 25%;
+    height: 0%;
+
+    left: 48%;
+    top: 18%;
+  }
+  .center{
+    width: 30%;
+    left: 40%;
+  }
+  .CNA-txt{
+    left: 42%;
+  }
   .signup {
-    padding: 0.5em;
-    background: #7F5A3F;
-    box-shadow: 0 0 2em #7f5a3f54;
-    color: white;
-    border: none;
-    border-radius: 100px;
-    position: absolute;
-    top: 82%;
-    left: 32%;
-    font-weight: 100;
-    font-size: 125%;
-    width:37%;
+    left: 42%;
+    width:15%;
   }
-
-  .al-txt {
-    bottom: 5%;
-    position: absolute;
-    left: 8%;
-    font-size: 18px;
-    font-weight: 600;
-    color: #7F5A3F;
-  }
-
   .lo-txt {
-    bottom: 2%;
-    position: absolute;
-    left: 67%;
-    font-size: 35px;
-    font-weight: 1000;
-    color: #ffffff;
-    -webkit-text-stroke: 1.5px #7F5A3F;
+    left: 85%;
   }
-  
-  button {
-    cursor: pointer;
+  .input {
+    width: 90%;
   }
-
-  @media screen and (min-width: 1000px) {
-    .bago {
-      top: 0%;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-    .line{
-      border-radius: 15px;
-      padding: 0.5%; 
-      width: 25%;
-      height: 0%;
-      position: absolute;
-      left: 48%;
-      top: 18%;
-    }
-    .center{
-      width: 30%;
-      left: 40%;
-    }
-    .CNA-txt{
-      left: 42%;
-    }
-    .signup {
-      left: 42%;
-      width:15%;
-    }
-    .lo-txt {
-     left: 85%;
-    }
-    .input {
-      width: 90%;
-    }
-    .fin{
-      width: 90%;
-    }
+  .fin{
+    width: 90%;
   }
+}
 
 .circle{
   border-radius: 100%;
