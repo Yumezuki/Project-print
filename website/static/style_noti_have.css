@@ -13,7 +13,7 @@ Background
 */
 
 body {
-  background-image: url(/static/Images/Notification-bell.png);
+  background-image: url(/website/static/Images/Notification-bell.png);
   background-repeat: no-repeat;
   background-position: center;
   height: 90vh;

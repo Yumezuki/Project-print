@@ -13,7 +13,7 @@ Background
 */
 
 body {
-  background-image: url(/static/Images/search_here_bg.png);
+  background-image: url(/website/static/Images/search_here_bg.png);
   background-repeat: no-repeat;
   background-position: center;
   height: 90vh;
