@@ -25,6 +25,7 @@ Button back
   position: fixed;
   display: flex;
   margin: 1em;
+  top: 0;
 }
 
 .back {
@@ -48,6 +49,17 @@ Button back
   text-align: center;
 }
 
+/* 
+
+Image & Username 
+
+*/
+
+.content {
+  margin-top: 20%;
+  z-index: 0;
+}
+
 .avatar {
   display: flex;
   flex-direction: column;
@@ -56,8 +68,6 @@ Button back
 
 .profile-img{
   display: flex;
-  flex-direction: column;
-  margin-top: 25%;
   background: rgb(255, 255, 255);
   border-radius: 10000px;
   width: 192px;
@@ -80,8 +90,24 @@ Button back
 }
 
 .username{
-  width: 10em;
-  margin: 1em;
+  width: auto;
+  margin: .5em 0 1em;
+}
+
+/* 
+
+Box
+
+*/
+
+.box {
+  margin: 0 5%;
+}
+
+.name_sur {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .name {
@@ -89,116 +115,89 @@ Button back
   box-shadow: 0 0 2em #7f5a3f6e;
   border-style: solid;
   border-color: #7F5A3F;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   display: flex;
-  flex-direction: column;
-  gap: 0.5em;
   border-radius: 30px;
-  color: #7F5A3F;
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  right: 51%;
-  font-family: 'Itim'; 
   font-size: 125%; 
+  width: 100%;
+  margin-bottom: 3%;
 }
 
-.surname {
+#surname {
+  margin-left: .5em;
+}
+
+.email ,.user{
   background: white;
   box-shadow: 0 0 2em #7f5a3f6e;
   border-style: solid;
   border-color: #7F5A3F;
-  padding: 0.5em;
+  padding: .5em 1em;
   display: flex;
-  flex-direction: column;
-  gap: 0.5em;
+  flex-direction: row;
   border-radius: 30px;
-  color: #7F5A3F;
-  position: absolute;
-  top: 50%;
-  left: 51%;
-  right: 10%;
-  font-family: 'Itim'; 
-  font-size: 125%; 
+  font-size: 125%;
+  margin-bottom: 3%;
 }
 
-.email {
-  background: white;
-  box-shadow: 0 0 2em #7f5a3f6e;
-  border-style: solid;
-  border-color: #7F5A3F;
-  padding: 0.5em;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  border-radius: 30px;
-  color: #7F5A3F;
-  position: absolute;
-  top: 60%;
-  left: 10%;
-  right: 10%;
-}
-
-.email ion-icon {
-  color: #7F5A3F;
-  margin-bottom: -0.2em;
-  margin-left: 0.5;
-  top: 30%;
-  position: absolute;
-}
 .user {
-  background: white;
-  box-shadow: 0 0 2em #7f5a3f6e;
-  border-style: solid;
-  border-color: #7F5A3F;
-  padding: 0.5em;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  border-radius: 30px;
-  color: #7F5A3F;
-  position: absolute;
-  top: 67%;
-  left: 10%;
-  right: 10%;
-}
-.user ion-icon {
-  color: #7F5A3F;
-  margin-bottom: -0.2em;
-  margin-left: 0.5;
-  top: 30%;
-  position: absolute;
+  margin-bottom: 0;
 }
 
-input {
-  outline: none;
-  border: none;
-}
-
-input::-moz-placeholder {
-  color: #7F5A3F;
-  font-size: 0.9em;
-}
-
-input:-ms-input-placeholder {
-  color: #7F5A3F;
-  font-size: 0.9em;
-}
-
-input::placeholder {
-  color: #7f5a3fbd;
-  font-size: 0.9em;
-}
-
-.fin{
-  font-family: 'Itim'; 
-  font-size: 125%; 
-  margin: 0%;
-  margin-left: 20px;
+i {
+  margin-top: .1em;
+  padding-right: .5em;
 }
 
 @media screen and (min-width: 1000px) {
   .profile-img{
       margin-top: 10%;
   }
+}
+
+/* 
+
+  Bottom Bar
+
+*/
+
+
+.bottom_bar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  top: 89.5%;
+}
+
+.long_circle {
+  position: fixed;
+  height: 3em;
+  width: 14em;
+  background-color: #F6DB78;
+  border-radius: 30px;
+  border-color: #7F5A3F;
+  border-style: solid;
+  text-align: center;
+  box-shadow: 0 5px 6px 1px #7f5a3f6b;
+}
+
+.long_circle i {
+  font-size: x-large;
+  padding: .5em .8em;
+  color: #7F5A3F;
+}
+
+/* 
+
+Logout
+
+*/
+
+.logout {
+  font-size: 125%;
+  padding: 3%;
+  width: auto;
+  display: flex;
+  justify-content: center;
 }
