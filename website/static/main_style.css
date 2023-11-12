@@ -24,13 +24,11 @@ Logo
   margin: 1em;
 }
 
-
 /* 
 
   Bottom Bar
 
 */
-
 
 .bottom_bar {
   display: flex;
@@ -43,7 +41,7 @@ Logo
 .long_circle {
   position: fixed;
   height: 3em;
-  width: 18em;
+  width: 14em;
   background-color: #F6DB78;
   border-radius: 30px;
   border-color: #7F5A3F;

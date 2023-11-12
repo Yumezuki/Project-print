@@ -58,7 +58,7 @@ Logo
 .long_circle {
   position: fixed;
   height: 3em;
-  width: 18em;
+  width: 14em;
   background-color: #F6DB78;
   border-radius: 30px;
   border-color: #7F5A3F;
@@ -70,39 +70,5 @@ Logo
 .long_circle i {
   font-size: x-large;
   padding: .5em .8em;
-  color: #7F5A3F;
-}
-
-/* 
-
-Search Bar 
-
-*/
-
-.search_bar {
-  position: relative;
-  background: white;
-  box-shadow: 0 10px 10px 1px #7f5a3f3e;
-  border-style: solid;
-  border-color: #7f5a3f;
-  padding: .5em 1.5em;
-  border-radius: 30px;
-  top: 7%;
-  margin: 5%;
-  width: auto;
-}
-
-.search_bar input {
-  width: 90%;
-  outline: none;
-  border: none;
-  font-size: 20px;
-}
-
-.press {
-  width: auto;
-  border: none;
-  background: none;
-  font-size: 20px;
   color: #7F5A3F;
 }
