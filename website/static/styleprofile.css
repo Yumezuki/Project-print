@@ -196,8 +196,12 @@ Logout
 
 .logout {
   font-size: 125%;
-  padding: 3%;
-  width: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
+  background: none;
+  border-style: none;
+  margin-top: 3%;
+  cursor: pointer;
+  text-decoration: none;
 }

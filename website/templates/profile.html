@@ -16,7 +16,7 @@
 
     
     <span class="top">
-        <a href="/templates/main_page.html" class="back"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="http://127.0.0.1:5000/main_page" class="back"><i class="fa-solid fa-arrow-left"></i></a>
         <p class="ttx">My Profile</p>
     </span>
 
@@ -24,9 +24,9 @@
 
     <div class="bottom_bar">
         <span class="long_circle">
-            <a href="/templates/main_page.html"><i class="fa-solid fa-house"></i></a>
-            <a href="/templates/profile.html"><i class="fa-solid fa-user"></i></a>
-            <a href="/templates/noti_have.html"><i class="fa-solid fa-bell"></i></a>
+            <a href="http://127.0.0.1:5000/main_page"><i class="fa-solid fa-house"></i></a>
+            <a href="http://127.0.0.1:5000/profile"><i class="fa-solid fa-user"></i></a>
+            <a href="http://127.0.0.1:5000/noti"><i class="fa-solid fa-bell"></i></a>
         </span>
     </div>
 
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="username">
-            <p class="name_show" id ="username-p">Username</p>
+            <p class="name_show" id ="username-p">{{ user_data['username'] }}</p>
         </div>
     </div>
 
@@ -47,25 +47,26 @@
 
     <div class="box">
         <div class="name_sur">
-            <p class="name" id="name">Username</p>
-            <p class="name" id="surname">Username</p>
+            <p class="name" id="name">{{ user_data['name'] }}</p>
+            <p class="name" id="surname">{{ user_data['surname'] }}</p>
         </div>
         <div class="email">
             <i class="fa-solid fa-envelope"></i>
-            <p class="fin" id="mail">user@mail.com</p>
+            <p class="fin" id="mail">{{ user_data['email'] }}</p>
         </div>
         <div class="user">
             <i class="fa-solid fa-user"></i>
-            <p class="fin" id="usename">username</p>
+            <p class="fin" id="usename">{{ user_data['username'] }}</p>
         </div>
     </div>
 
     <!-- Logout -->
-
-    <div class="logout">
+    <form method="POST">
+    <a class="logout" href="http://127.0.0.1:5000/logout">
         <i class="fa-solid fa-right-from-bracket"></i>
         <p>Logout</p>
-    </div>
+    </a>
+    </form>
 
 </body>
 </html>

@@ -12,9 +12,6 @@ views = Blueprint('views', __name__)
 def main_page():
     return render_template("main_page.html", user=current_user)
 
-@views.route('/profile')
-def profile():
-    return render_template("profile.html")
 
 @views.route('/noti')
 def noti_have():
@@ -23,3 +20,14 @@ def noti_have():
 @views.route('/details')
 def detail():
     return render_template("Detail.html")
+
+@views.route('/profile', methods=['GET', 'POST'])
+@login_required
+def profile():
+    user_data = {
+        "name": current_user.name,
+        "surname": current_user.surname,
+        "email": current_user.email,
+        "username": current_user.username,
+    }
+    return render_template("profile.html", user_data=user_data)
