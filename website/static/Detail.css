@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 900px;
     overflow-x: hidden;
-    height: 100vh;
+    height: auto;
 }
 
 /* 
@@ -134,10 +134,9 @@ Activities
     width: 20em;
     border-radius: 10px;
     box-shadow: 0 4px 10px 0 gray;
-    background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
-    position: relative;
+    object-fit: cover;
 }
 
 .name-act {
@@ -156,5 +155,9 @@ Activities
 
     .box {
         margin: 3% 5% 5%;
+    }
+
+    body {
+        height: 150vh;
     }
 }
