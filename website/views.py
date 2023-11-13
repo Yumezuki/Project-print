@@ -93,3 +93,4 @@ def fitness():
 @views.route('/decisivecafe')
 def deciviver():
     return render_template("detail_decisivecafe.html")
+
