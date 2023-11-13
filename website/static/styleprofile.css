@@ -17,35 +17,20 @@ body{
 
 /* 
 
-Button back 
+Button
 
 */
 
 .top {
   position: fixed;
-  display: flex;
-  margin: 1em;
+  display: block;
+  margin: 5%;
   top: 0;
+  width: 90%;
 }
-
-.back {
-  text-decoration: none;
-  height: 2.9em;
-  width: 2.9em;
-  background-color: #7F5A3F;
-  border-radius: 50%;
-  box-shadow: 0 5px 6px 1px #7f5a3f6b;
-}
-
-.fa-arrow-left{
-  margin: 30%;
-  font-size: 20px;
-  color: white;
-} 
 
 .ttx{
-  padding: .4em 1em;
-  font-size: x-large;
+  font-size: xx-large;
   text-align: center;
 }
 
@@ -54,11 +39,6 @@ Button back
 Image & Username 
 
 */
-
-.content {
-  margin-top: 20%;
-  z-index: 0;
-}
 
 .avatar {
   display: flex;
@@ -77,9 +57,9 @@ Image & Username
   background-position: center;
   border-style: solid;
   border-color: #6d4b33;
-  position: relative;
   box-shadow: 0 5px 6px 1px #7f5a3f6b;
   object-fit: cover;
+  margin-top: 20%;
 }
 
 .name_show{
@@ -152,7 +132,12 @@ i {
 
 @media screen and (min-width: 1000px) {
   .profile-img{
-      margin-top: 10%;
+      margin-top: 6%;
+  }
+  .top {
+    margin: 3%;
+    top: 0;
+    width: 95%;
   }
 }
 
