@@ -98,3 +98,9 @@ Notification
 .box h2 {
   padding-bottom: .5em;
 }
+
+@media screen and (min-width: 1000px) {
+  .box {
+    margin-top: 5%;
+  }
+}
