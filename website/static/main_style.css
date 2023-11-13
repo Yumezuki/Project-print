@@ -100,3 +100,20 @@ Content
 a {
   text-decoration: none;
 }
+
+@media screen and (min-width: 1000px) {
+  .img-main {
+    height: 40em;
+    width: 40em;
+    margin: 3em 3em 1em;
+  }
+  .deco {
+    font-size: xx-large;
+    margin: 0 0 0.5em;
+    text-align: center;
+  }
+  .dis{
+    margin: 2% 5% 20%;
+  }
+  
+}

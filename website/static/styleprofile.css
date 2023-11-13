@@ -22,11 +22,10 @@ Button
 */
 
 .top {
-  position: fixed;
   display: block;
-  margin: 5%;
+  margin: 10%;
   top: 0;
-  width: 90%;
+  width: 80%;
 }
 
 .ttx{
@@ -59,7 +58,7 @@ Image & Username
   border-color: #6d4b33;
   box-shadow: 0 5px 6px 1px #7f5a3f6b;
   object-fit: cover;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .name_show{
@@ -132,12 +131,11 @@ i {
 
 @media screen and (min-width: 1000px) {
   .profile-img{
-      margin-top: 6%;
+      margin-top: 3%;
   }
   .top {
-    margin: 3%;
-    top: 0;
-    width: 95%;
+    margin: 5em 0 0 0;
+    width: 100%;
   }
 }
 
