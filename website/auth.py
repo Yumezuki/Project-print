@@ -88,3 +88,20 @@ def password():
             flash('Username does not exist.', category='error')
 
     return render_template("forgot.html", user=current_user)
+
+@auth.route('/profile', methods=['GET', 'POST'])
+@login_required
+def profile():
+    user_data = {
+        "name": current_user.name,
+        "surname": current_user.surname,
+        "email": current_user.email,
+        "username": current_user.username,
+        "image" : current_user.image,
+    }
+    if request.method == 'POST':
+        new_image_url = request.form.get('image_url')
+        current_user.image = new_image_url
+        db.session.commit()
+        return redirect(url_for('auth.profile'))
+    return render_template("profile.html", user_data=user_data, )

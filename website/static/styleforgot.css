@@ -53,22 +53,22 @@ input::placeholder {
   font-size: 0.9em;
 }
 
+.logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 3%;
+}
 
-.center {
-  position: absolute;
-  left: 27%;
-  top: 10%;
+.logo-text {
   width: 50%;
 }
+
 .line {
-  border-radius: 25px;
-  background: #E0554D;
-  padding: 0.5%; 
-  width: 40%;
-  height: 0%;
-  position: absolute;
-  left: 40%;
-  top: 13%;
+border-radius: 25px;
+background: #E0554D;
+padding: 0.5%;
+width: 45%;
+margin: .5em .5em .5em 35%;
 }
 
 .txt {
@@ -183,4 +183,36 @@ button {
 .fin{
   font-family: 'Itim'; 
   font-size: 125%; 
+}
+
+@media screen and (min-width: 600px) {
+  .center{
+    width: 30%;
+    left: 40%;
+  }
+  
+  .logo-text {
+    width: 30%;
+  }
+  
+  .line {
+  border-radius: 25px;
+  background: #E0554D;
+  padding: 0.3%;
+  width: 25%;
+  margin: .5em .5em .5em 45%;
+  }
+  .txt {
+    top: 23%;
+    left: 46%;
+
+  }
+  
+  .your{
+      top: 39%;
+      left: 46%;
+  }
+  .lo-txt {
+    left: 85%;
+  }
 }

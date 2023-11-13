@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(/website/static/Images/image_bg.png);
+  background-image: url(/static/Images/image_bg.png);
   background-color: #F6DB78;
   height: auto;
 }
@@ -157,13 +157,6 @@ button {
 }
 
 @media screen and (min-width: 600px) {
-  .bago {
-    top: 0%;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  
   .center{
     width: 30%;
     left: 40%;

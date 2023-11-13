@@ -74,6 +74,22 @@ Image & Username
   margin: .5em 0 1em;
 }
 
+.url {
+  background: white;
+  box-shadow: 0 0 2em #7f5a3f6e;
+  border-style: solid;
+  border-color: #7F5A3F;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 30px;
+  color: #7F5A3F;
+  top: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
 /* 
 
 Box
@@ -188,4 +204,29 @@ Logout
   margin-top: 3%;
   cursor: pointer;
   text-decoration: none;
+}
+
+.fin{
+  font-family: 'Itim'; 
+  font-size: 125%; 
+}
+
+input {
+outline: none;
+border: none;
+}
+
+input::-moz-placeholder {
+color: #7F5A3F;
+font-size: 0.9em;
+}
+
+input:-ms-input-placeholder {
+color: #7F5A3F;
+font-size: 0.9em;
+}
+
+input::placeholder {
+color: #7f5a3fbd;
+font-size: 0.9em;
 }

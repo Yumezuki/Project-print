@@ -18,18 +18,6 @@ def noti_have():
     return render_template("noti_have.html")
 
 
-@views.route('/profile', methods=['GET', 'POST'])
-@login_required
-def profile():
-    user_data = {
-        "name": current_user.name,
-        "surname": current_user.surname,
-        "email": current_user.email,
-        "username": current_user.username,
-        "image" : current_user.image,
-    }
-    return render_template("profile.html", user_data=user_data)
-
 @views.route('/totticafe')
 def totti():
     return render_template("detail_totticafe.html")
