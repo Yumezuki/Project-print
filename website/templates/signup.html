@@ -9,7 +9,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Itim&display=swap'>
-    <link rel="stylesheet" href="/website/static/styleup.css">
+    <link rel="stylesheet" href="/static/styleup.css">
     <script src="https://kit.fontawesome.com/8fdb36e626.js" crossorigin="anonymous"></script>
 </head>
 
@@ -37,7 +37,7 @@
 </script>
 <body>
     <div class="logo">
-        <img src="/website/static/Images/Text_WHEREVER.png" class="logo-text">
+        <img src="/static/Images/Text_WHEREVER.png" class="logo-text">
         <p class="line"></p>
     </div>
     <div class="cna">
@@ -51,28 +51,28 @@
         </div>
         <div class="email">
             <div class="sec-2">
-                <ion-icon name="mail" role="img" class="md hydrated"></ion-icon>
+                <i class="fa-solid fa-envelope"></i>
                 <input type="email" name="email" placeholder="Email" class="fin" id="email">
             </div>
         </div>
         <div class="user">
             <div class="sec-2">
-                <ion-icon name="person" role="img" class="md hydrated"></ion-icon>
+                <i class="fa-solid fa-user"></i>
                 <input type="text" id="username"name="username" placeholder="Username" class="fin">
             </div>
         </div>
         <div class="password">
-            <div>
-                <ion-icon name="lock-closed" role="img" class="md hydrated"></ion-icon>
+            <div class="group">  
+                <i class="fa-solid fa-lock"></i>
                 <input class="fin" type="password" name="password1" placeholder="Password" id="password1">
-                <ion-icon class="show-hide" name="eye" onclick="myFunction()"></ion-icon>
+                <i class="fa-solid fa-eye" onclick="myFunction()"></i>
             </div>
         </div>
         <div class="passwordcheck">
-            <div>
-                <ion-icon name="lock-closed" role="img" class="md hydrated"></ion-icon>
+            <div class="group">
+                <i class="fa-solid fa-lock"></i>
                 <input class="fin" type="password" name="password2" placeholder="Password Again" id="password2">
-                <ion-icon class="show-hide" name="eye" onclick="myFunction2()"></ion-icon>
+                <i class="fa-solid fa-eye" onclick="myFunction2()"></i>
             </div>
         </div>
             <div class="avatar">
@@ -82,13 +82,16 @@
                     </div>
                </div>
             </div>
-        <div>
+        <div class="press">
             <button type="submit" class="signup" style="font-family: 'Itim';">Sign Up</button>
         </div>
     </form>
-        <div calss="bottom_bar">
-            <p class="al-txt">Already have an account?</p>
-            <a href="/login" style="text-decoration:none" ><p class="lo-txt">Login</p> </a>
+        <div class="bottom_bar">
+            <p class="al-txt">Already have an account?
+                <a href="/login" style="text-decoration:none">
+                    <p class="lo-txt">Login</p>
+                </a>
+            </p>
         </div>
     </div>
 </body>
