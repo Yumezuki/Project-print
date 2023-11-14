@@ -176,7 +176,8 @@ Logout
 
 .fin{
   font-family: 'Itim'; 
-  font-size: 125%; 
+  font-size: 125%;
+  width: 100%;
 }
 
 input {

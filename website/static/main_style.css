@@ -62,10 +62,16 @@ Content
 
 */
 
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .dis{
   display: flex;
   flex-direction: column;
-  margin: 10% 5% 20%;
 }
 
 .content {
@@ -74,10 +80,8 @@ Content
   margin: auto auto .8em auto;
 }
 
-.content-1 {
-  display: flex;
-  flex-direction: row;
-  margin: 2em auto .8em auto;
+#c-1 {
+  margin-top: 5em;
 }
 
 .img-main {
@@ -101,7 +105,7 @@ a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 650px) {
   .img-main {
     height: 30em;
     width: 30em;
@@ -109,11 +113,7 @@ a {
   }
   .deco {
     font-size: xx-large;
-    margin: 0 0 0.5em;
     text-align: center;
-  }
-  .dis{
-    margin: 2% 5% 20%;
   }
   
 }
