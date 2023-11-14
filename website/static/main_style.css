@@ -103,8 +103,8 @@ a {
 
 @media screen and (min-width: 1000px) {
   .img-main {
-    height: 40em;
-    width: 40em;
+    height: 30em;
+    width: 30em;
     margin: 3em 3em 1em;
   }
   .deco {
