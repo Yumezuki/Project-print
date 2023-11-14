@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WHEREVER</title>
     <link rel="icon" href="/static/Images/Logo_WHEREVER(Color).png">
-    <link rel="stylesheet" href="/static/styleprofile.css">
+    <link rel="stylesheet" href="/website/static/styleprofile.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -14,9 +14,7 @@
 <body>
     <!-- Button back -->
 
-    <span class="top">
-        <p class="ttx">My Profile</p>
-    </span>
+    <p class="ttx">My Profile</p>
 
     <!-- Bottom Bar -->
 
@@ -37,13 +35,15 @@
             <p class="name_show" id ="username-p">{{ user_data['username'] }}</p>
         </div>
     </div>
-    <form method="POST">
+
+    <!-- Box -->
+
+    <div class="top-box">
+        <div class="box">
+        <form method="POST">
         <div class="url">
             <input type="text" id="image_url"name="image_url" placeholder="Change Image URL" class="fin">
         </div>
-    <!-- Box -->
-
-    <div class="box">
         <div class="name_sur">
             <p class="name" id="name">{{ user_data['name'] }}</p>
             <p class="name" id="surname">{{ user_data['surname'] }}</p>
@@ -58,7 +58,10 @@
         </div>
     </div>
 
+    </div>
+    
     <!-- Logout -->
+
     <form method="POST">
     <a class="logout" href="/logout">
         <i class="fa-solid fa-right-from-bracket"></i>

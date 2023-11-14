@@ -21,16 +21,10 @@ Button
 
 */
 
-.top {
-  display: block;
-  margin: 10%;
-  top: 0;
-  width: 80%;
-}
-
 .ttx{
   font-size: xx-large;
   text-align: center;
+  margin: 5%;
 }
 
 /* 
@@ -58,7 +52,6 @@ Image & Username
   border-color: #6d4b33;
   box-shadow: 0 5px 6px 1px #7f5a3f6b;
   object-fit: cover;
-  margin-top: 15%;
 }
 
 .name_show{
@@ -74,22 +67,6 @@ Image & Username
   margin: .5em 0 1em;
 }
 
-.url {
-  background: white;
-  box-shadow: 0 0 2em #7f5a3f6e;
-  border-style: solid;
-  border-color: #7F5A3F;
-  padding: 0.5em;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  border-radius: 30px;
-  color: #7F5A3F;
-  top: 30%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-}
 /* 
 
 Box
@@ -98,12 +75,12 @@ Box
 
 .box {
   margin: 0 5%;
+  width: auto;
 }
 
 .name_sur {
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 
 .name {
@@ -114,7 +91,7 @@ Box
   padding: 0.5em 1em;
   display: flex;
   border-radius: 30px;
-  font-size: 125%; 
+  font-size: 125%;
   width: 100%;
   margin-bottom: 3%;
 }
@@ -123,7 +100,8 @@ Box
   margin-left: .5em;
 }
 
-.email ,.user{
+.email ,.user ,.url{
+  width: auto;
   background: white;
   box-shadow: 0 0 2em #7f5a3f6e;
   border-style: solid;
@@ -132,7 +110,7 @@ Box
   display: flex;
   flex-direction: row;
   border-radius: 30px;
-  font-size: 125%;
+  font-size: 110%;
   margin-bottom: 3%;
 }
 
@@ -143,16 +121,6 @@ Box
 i {
   margin-top: .1em;
   padding-right: .5em;
-}
-
-@media screen and (min-width: 1000px) {
-  .profile-img{
-      margin-top: 3%;
-  }
-  .top {
-    margin: 5em 0 0 0;
-    width: 100%;
-  }
 }
 
 /* 
@@ -196,14 +164,14 @@ Logout
 
 .logout {
   font-size: 125%;
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
   background: none;
   border-style: none;
-  margin-top: 3%;
   cursor: pointer;
   text-decoration: none;
+  padding: 3%;
 }
 
 .fin{
@@ -229,4 +197,28 @@ font-size: 0.9em;
 input::placeholder {
 color: #7f5a3fbd;
 font-size: 0.9em;
+}
+
+@media screen and (min-width: 650px){
+  .ttx{
+    margin: 2%;
+  }
+
+  .box {
+    width: 40em;
+  }
+
+  .email ,.user ,.url ,.name{
+    margin-bottom: 1.5%;
+  }
+
+  .top-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logout {
+    padding: 1.5%;
+  }
 }
